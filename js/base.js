@@ -1,3 +1,5 @@
+var homeOffset;
+
 function scrollTween(offset) {
   return function() {
     var i = d3.interpolateNumber(window.pageYOffset || document.documentElement.scrollTop, offset);
@@ -6,12 +8,22 @@ function scrollTween(offset) {
 };
 
 $(document).ready(function() {
+
+  var navbarItems = d3.selectAll(".nav a.page-scroll");
+  var anchorItems = navbarItems.each(function(d) {
+    console.log("hello");
+  });
+
   d3.select(window).on("scroll", function() {
-    if (window.scrollY <= 50) {
+    // var homeOffset = d3.select("#home").property("clientHeight");
+    var homeOffset = 50;
+    if (window.scrollY <= homeOffset) {
       d3.select(".navbar").classed("top-nav-collapse", false);
     } else {
       d3.select(".navbar").classed("top-nav-collapse", true);
     }
+
+    var fromTop = d3.select("body").property("scrollTop");
   });
 
   d3.selectAll("a.page-scroll").on("click", function() {
@@ -21,4 +33,11 @@ $(document).ready(function() {
     d3.event.preventDefault();
     d3.transition().duration(500).tween("scroll", scrollTween(offset));
   });
+
+  d3.select("#btn-down").on("mouseenter", function() {
+    console.log("what");
+    d3.select(this).classed("bounce", true);
+  });
 });
+
+// particlesJS.load('particles-js', '/assets/particles.json');
