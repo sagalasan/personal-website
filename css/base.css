@@ -2,7 +2,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #212121;
-    font-family: OpenSans;
+    font-family: Roboto;
 }
 
 html {
@@ -46,7 +46,7 @@ html {
 
 #first-name {
     font-size: 500%;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 #last-name {
@@ -164,4 +164,5 @@ a:hover {
 .personal-icon {
     text-transform: none;
     font-family: VarianeScript;
+    font-size: 24px;
 }
