@@ -32,6 +32,7 @@ $(document).ready(function() {
     var offset = target.property("offsetTop");
     d3.event.preventDefault();
     d3.transition().duration(500).tween("scroll", scrollTween(offset));
+    link.style("background", "transparent");
   });
 
   d3.select("#btn-down").on("mouseenter", function() {
