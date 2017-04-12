@@ -10,6 +10,10 @@ html {
     height: 100%;
 }
 
+#contact {
+    height: 200px;
+}
+
 p {
     color: #eeeeee;
 }
@@ -68,6 +72,14 @@ p {
 
 #name-wrapper {
     margin-top: 60px;
+}
+
+.bio-wrapper {
+
+}
+
+#bio {
+    font-size: 1.15em;
 }
 
 .btn-invisible {
@@ -168,4 +180,26 @@ a:hover {
     text-transform: none;
     font-family: VarianeScript;
     font-size: 24px;
+}
+
+.soc {
+    display: block;
+    -webkit-padding-start: 0;
+}
+
+.soc-item {
+    display: inline-block;
+    margin: 1rem 1rem;
+}
+
+.contact-icon img {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #eeeeee;
+    fill: #eeeeee;
+}
+
+.contact-icon img:hover {
+    width: 3rem;
+    height: 3rem;
 }
