@@ -190,6 +190,7 @@ a:hover {
 
 .soc {
     display: block;
+    -moz-padding-start: 0;
     -webkit-padding-start: 0;
 }
 
