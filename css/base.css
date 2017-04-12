@@ -79,7 +79,13 @@ p {
 }
 
 #bio {
+    width: 500px;
+    margin: auto;
     font-size: 1.15em;
+}
+
+#bio p {
+    text-align: left;
 }
 
 .btn-invisible {
