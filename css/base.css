@@ -10,6 +10,10 @@ html {
     height: 100%;
 }
 
+p {
+    color: #eeeeee;
+}
+
 .content-container {
     display: table;
     height: 100%;
@@ -36,21 +40,19 @@ html {
     background: white;
 }
 
-#first-name,
-#last-name {
+#my-name {
     color: #eeeeee;
     padding: 0;
     margin: 0;
+    font-size: 500%;
+    font-weight: 400;
     font-family: OpenSans;
 }
 
-#first-name {
-    font-size: 500%;
-    font-weight: 400;
-}
-
-#last-name {
-    font-size: 400%;
+#my-title {
+    color: #EEEEEE;
+    font-family: OpenSans;
+    font-size: 150%;
     font-weight: 400;
 }
 
@@ -116,7 +118,8 @@ a:hover {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    /*border-bottom: 1px solid rgba(255, 255, 255, 0.3);*/
+    border-bottom: 0;
     text-transform: uppercase;
     /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     background-color: black;
@@ -149,7 +152,7 @@ a:hover {
         padding: 0;
         background: black;
         visibility: visible;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 0;
     }
 }
 
