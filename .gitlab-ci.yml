@@ -1,4 +1,4 @@
-image: jekyll:minimal
+image: jekyll/minimal:latest
 
 variables:
   JEKYLL_ENV: production
