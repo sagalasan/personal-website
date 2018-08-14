@@ -5,12 +5,17 @@ variables:
   LC_ALL: C.UTF-8
 
 before_script:
+  - echo "${SSH_PRIVATE_KEY}" > id_rsa
+  - chmod 700 id_rsa
+  - mkdir "${HOME}/.ssh"
+  - echo "${SSH_HOST_KEY}" > "${HOME}/.ssh/known_hosts"
   - bundle install
 
 pages:
   stage: deploy
   script:
     - bundle exec jekyll build -d public
+    - rsync -hrvz --delete --exclude=_ -e 'ssh -i id_rsa' public/ gitlab@${HOST_IP}:/var/www/chmartinez.io/html/
   artifacts:
     paths:
       - public
