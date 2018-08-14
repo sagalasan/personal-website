@@ -15,19 +15,13 @@ pages:
   stage: build
   script:
     - bundle exec jekyll build -d public
-  artifacts:
-    paths:
-      - public
-  only:
-    - master
-
-deploy:
-  stage: deploy
-  script:
     - echo "${SSH_PRIVATE_KEY}" > id_rsa
     - chmod 700 id_rsa
     - mkdir "${HOME}/.ssh"
     - echo "${SSH_HOST_KEY}" > "${HOME}/.ssh/known_hosts"
     - rsync -hrvz --delete --exclude=_ -e 'ssh -i id_rsa' public/ www@${HOST_IP}:/var/www/chmartinez.io/html/
+  artifacts:
+    paths:
+      - public
   only:
     - master
