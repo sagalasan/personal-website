@@ -6,21 +6,15 @@ variables:
 
 stages:
   - build
-  - deploy-pages
   - deploy
 
 before_script:
   - bundle install
 
-build:
+pages:
   stage: build
   script:
     - bundle exec jekyll build -d public
-  only:
-    - master
-
-pages:
-  stage: deploy-pages
   artifacts:
     paths:
       - public
