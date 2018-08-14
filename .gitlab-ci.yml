@@ -15,7 +15,7 @@ pages:
     - chmod 700 id_rsa
     - mkdir "${HOME}/.ssh"
     - echo "${SSH_HOST_KEY}" > "${HOME}/.ssh/known_hosts"
-    - rsync -hrvz --delete --exclude=_ -e 'ssh -i id_rsa' public/ gitlab@${HOST_IP}:/var/www/chmartinez.io/html/
+    - rsync -hrvz --delete --exclude=_ -e 'ssh -i id_rsa' public/ www@${HOST_IP}:/var/www/chmartinez.io/html/
   artifacts:
     paths:
       - public
