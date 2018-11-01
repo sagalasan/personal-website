@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="{{ $.Site.Language.Lang }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <base href="">
+    <title>{{ $.Site.Title }}</title>
+    <!--<link rel="stylesheet" href="css/bootstrap.css"/>-->
+    <link rel="stylesheet" href="css/fontawesome.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+
+<div class="page">
+
+{{ block "header" . }}{{ partial "header" . }}{{end}}
+
+{{ block "main" . }}{{end}}
+
+{{ block "footer" . }}{{ partial "footer" . }}{{end}}
+
+</div>
+
+<!--<script src="app.js"></script>-->
+
+<!--<script src="js/jquery.min.js"></script>-->
+
+</body>
+</html>

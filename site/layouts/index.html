@@ -1,0 +1,49 @@
+{{ define "main" }}
+
+<div class="header header__container">
+    <i class="fas fa-4x fa-angle-double-up"></i>
+    <div>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+</div>
+
+<main class="container content">
+    <!--<div class="home__"-->
+    <div class="intro__container">
+        <div class="intro__words">
+            <h3 class="intro">Hello,</h3>
+            <h3 class="intro intro__intro">My name is <span class="intro__bold">{{ .Site.Params.MyName }}</span>, I am a
+                <span class="intro__bold">{{ .Site.Params.MyTitle }}</span>
+                who specializes in designing clean and efficient solutions to modern software problems.
+                I recently graduated from the <span class="intro__bold">University of New Mexico</span>
+                with a degree in <span class="intro__bold">Computer Science</span>.
+                When I'm not coding, you can find me working on cars, reading a book,
+                or learning something new.
+            </h3>
+            <h3 class="intro">
+                Get in touch.<br>
+                <a class="intro__bold link__underline"
+                   href="mailto:{{ .Site.Params.MyEmail }}">
+                    {{ .Site.Params.MyEmail }}
+                </a>
+            </h3>
+        </div>
+    </div>
+</main>
+
+<div class="footer">
+    <div class="footer__container footer__logos">
+        <a class="link__fill fab fa-1x fa-github" href=""></a>
+        <a class="link__fill fab fa-1x fa-linkedin" href=""></a>
+        <a class="link__fill far fa-1x fa-envelope" href=""></a>
+    </div>
+    <div class="footer__container footer__copyright">
+        <!--<i class="far fa-copyright"></i>-->
+        <span>Copyright &copy {{ .Site.Params.CurrentYear }} {{ .Site.Params.MyName }}</span>
+    </div>
+</div>
+
+{{end}}
