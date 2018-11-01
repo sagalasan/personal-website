@@ -1,8 +1,8 @@
 {
-  "name": "victor-hugo",
+  "name": "personal-website",
   "version": "1.0.0",
-  "description": "Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
-  "repository": "netlify/victor-hugo",
+  "description": "My personal website",
+  "repository": "sagalasan/personal-website",
   "main": "index.js",
   "scripts": {
     "hugo": "gulp hugo",
