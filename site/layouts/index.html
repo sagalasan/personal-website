@@ -12,7 +12,7 @@
 
 <main class="container content">
     <div class="home">
-        <div class="intro__container">
+        <div class="home__container home__intro intro__container">
             <h3 class="intro">Hello,</h3>
             <h3 class="intro intro__intro">My name is <span class="intro__bold">{{ .Site.Params.MyName }}</span>, I am a
                 <span class="intro__bold">{{ .Site.Params.MyTitle }}</span>
@@ -30,13 +30,13 @@
                 </a>
             </h3>
         </div>
-        <div class="home__info">
+        <div class="home__container home__info">
             <div class="section">
                 <h3 class="section__title">Skills</h3>
                 <div class="section__container">
                     <div class="skills__category">
                         <h4 class="skills__label">Languages</h4>
-                        <div>
+                        <div class="skills__items">
                             <span class="skill-item">Java,</span>
                             <span class="skill-item">Python,</span>
                             <span class="skill-item">SQL,</span>
@@ -49,19 +49,18 @@
                     </div>
                     <div class="skills__category">
                         <h4 class="skills__label">Tools</h4>
-                        <div>
+                        <div class="skills__items">
                             <span class="skill-item">Maven,</span>
                             <span class="skill-item">Cargo,</span>
                             <span class="skill-item">Git,</span>
                             <span class="skill-item">Docker,</span>
                             <span class="skill-item">Ansible,</span>
                             <span class="skill-item">Grunt,</span>
-                            <span class="skill-item">Bash</span>
                         </div>
                     </div>
                     <div class="skills__category">
                         <h4 class="skills__label">Frameworks & OS</h4>
-                        <div>
+                        <div class="skills__items">
                             <span class="skill-item">Vert.x,</span>
                             <span class="skill-item">D3.js,</span>
                             <span class="skill-item">Pandas,</span>
@@ -86,14 +85,14 @@
                             <h4 class="jobs__company">Intel Corporation</h4>
                             <span class="jobs__dates">May 2016 - August 2016</span>
                         </div>
-                        <span class="jobs__role">F11x Yield Systems - Software Development Intern</span>
+                        <span class="jobs__role">Software Development Intern</span>
                     </div>
                     <div class="jobs__entry">
                         <div class="jobs__label">
                             <h4 class="jobs__company">Los Alamos National Laboratories</h4>
                             <span class="jobs__dates">June 2015 - July 2015</span>
                         </div>
-                        <span class="jobs__role">ISR - Software Development Intern</span>
+                        <span class="jobs__role">Software Development Intern</span>
                     </div>
                 </div>
             </div>
