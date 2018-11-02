@@ -9,7 +9,6 @@ $primary-dark-hover: #64ffda;
 $secondary-dark: #64ffda;
 
 $highlight-color: #007bff;
-//$highlight-color: #00e5ff;
 
 @import "partials/switch";
 
@@ -42,9 +41,6 @@ $xl: 1200px;
   }
 }
 
-$sm-padding: 25px;
-$md-padding: 60px;
-
 html {
   width: 100%;
   height: 100%;
@@ -66,8 +62,6 @@ body {
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
-  //min-height: 100vh;
-  //height: 100vh;
 }
 
 a {
@@ -116,16 +110,6 @@ ul {
   }
 }
 
-//.content {
-//  width: 100%;
-//  //padding: 0 $sm-padding;
-//  box-sizing: border-box;
-//
-//  //@include medium {
-//  //  padding: 0 $md-padding;
-//  //}
-//}
-
 .header {
   display: flex;
   flex: none;
@@ -149,55 +133,23 @@ ul {
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
-  //width: 100%;
-  //padding: 0 20px;
 
   @include small {
     max-width: 540px;
-    //padding: 0 50px;
   }
 
   @include medium {
     max-width: 720px;
-    //padding: 0 100px;
-  }
-
-  @include large {
-    //padding: 0 150px;
   }
 }
 
 .home {
-  //display: flex;
-  //flex-direction: column;
-  //flex-flow: wrap;
-  //justify-content: space-around;
-
-  &__container {
-    //padding: 20px 0;
-    //flex: 1;
-  }
-
   &__info {
     padding-top: 20px;
   }
 }
 
 .skills {
-  &__section {
-
-  }
-
-  &__title {
-    margin: 0;
-  }
-
-  &__container {
-    display: flex;
-    flex-direction: column;
-
-  }
-
   &__category {
     flex: 1;
     display: flex;
@@ -289,10 +241,6 @@ ul {
     color: $black;
   }
 
-  &__copyright {
-
-  }
-
   .link__fill {
     font-size: 1.5em;
     padding: 0 10px;
@@ -302,8 +250,3 @@ ul {
 .text-center {
   text-align: center !important;
 }
-
-//@import "partials/colors";
-//@import "partials/fonts";
-//@import "partials/global";
-//@import "partials/intro";
