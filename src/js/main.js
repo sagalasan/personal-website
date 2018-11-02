@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    var body = d3.select('body');
-    var nightDaySwitch = d3.select('#night-day-switch');
-    var nightDayCheckbox = d3.select('#night-day-checkbox');
+    const body = d3.select('body');
+    const nightDaySwitch = d3.select('#night-day-switch');
+    const nightDayCheckbox = d3.select('#night-day-checkbox');
 
     nightDaySwitch.on('click', function() {
         if (nightDayCheckbox.property('checked')) {
