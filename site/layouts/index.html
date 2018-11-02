@@ -102,9 +102,9 @@
 
 <div class="footer">
     <div class="footer__container footer__logos">
-        <a class="link__fill fab fa-1x fa-github" href=""></a>
-        <a class="link__fill fab fa-1x fa-linkedin" href=""></a>
-        <a class="link__fill far fa-1x fa-envelope" href=""></a>
+        <a class="link__fill fab fa-1x fa-github" target="_blank" href="{{ .Site.Params.GithubLink }}"></a>
+        <a class="link__fill fab fa-1x fa-linkedin" target="_blank" href="{{ .Site.Params.LinkedInLink }}"></a>
+        <a class="link__fill far fa-1x fa-envelope" href="mailto:{{ .Site.Params.MyEmail }}"></a>
     </div>
     <div class="footer__container footer__copyright">
         <span>Copyright &copy <span id="copyright-year">{{ .Site.Params.CurrentYear }}</span> {{ .Site.Params.MyName }}</span>
