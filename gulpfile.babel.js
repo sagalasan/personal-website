@@ -69,7 +69,9 @@ gulp.task("js-es6", (cb) => {
 
 gulp.task("js", () =>([
     jsTask("./node_modules/jquery/dist/jquery.min.js"),
-    jsTask("./node_modules/bootstrap/dist/js/bootstrap.js")
+    jsTask("./node_modules/bootstrap/dist/js/bootstrap.js"),
+    jsTask("./node_modules/d3/dist/d3.min.js"),
+    jsTask("./src/js/**/*.js")
 ]));
 
 function fontTask(path, dest = "./dist/fonts") {

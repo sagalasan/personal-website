@@ -2,8 +2,9 @@
 
 $black: #000000;
 $white: #ffffff;
+$off-white: #eeeeee;
 
-$background-dark: #2c3e50;
+$background-dark: #212121;
 $primary-dark: #ecf0f1;
 $primary-dark-hover: #64ffda;
 $secondary-dark: #64ffda;
@@ -55,6 +56,26 @@ body {
   box-sizing: border-box;
   color: #000000;
   font-family: OpenSans, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &.night {
+    background-color: $background-dark;
+    color: $off-white;
+
+    .link__underline:after {
+      background: $off-white;
+    }
+
+    .link__fill {
+      color: $off-white;
+
+      &:hover,
+      &:focus {
+        color: $highlight-color;
+      }
+    }
+  }
 }
 
 .page {
@@ -101,7 +122,7 @@ ul {
   }
 
   &__fill {
-    color: inherit;
+    color: $black;
 
     &:hover,
     &:focus {

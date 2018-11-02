@@ -56,7 +56,7 @@ $switch-translate: $switch-width - $slider-width - (2 * $switch-margin);
 input {
   &:checked {
     + .slider {
-      background-color: #2196F3;
+      background-color: $highlight-color;
 
       &:before {
         -webkit-transform: translateX($switch-translate);
@@ -66,9 +66,9 @@ input {
     }
   }
 
-  &:focus {
-    + .slider {
-      box-shadow: 0 0 1px #2196f3;
-    }
-  }
+  //&:focus {
+  //  + .slider {
+  //    box-shadow: 0 0 1px #2196f3;
+  //  }
+  //}
 }
