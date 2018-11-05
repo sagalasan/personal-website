@@ -1,7 +1,17 @@
 {{ define "main" }}
 
 <div class="header header__container">
-    <i class="fas fa-4x fa-angle-double-up"></i>
+    <!--<i class="fas fa-4x fa-angle-double-up"></i>-->
+
+    <a class="link__fill" href="/">
+        <svg id="brand-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.28 100">
+            <title>Logo</title>
+            <g transform="translate(-3.58 -3)">
+                <path d="M80.13,81.35a5.42,5.42,0,0,0-7.41-2l-20.87,12a5.57,5.57,0,0,1-5.53,0L17.2,74.6a5.52,5.52,0,0,1-2.77-4.79V36.19A5.52,5.52,0,0,1,17.2,31.4L46.32,14.58a5.54,5.54,0,0,1,5.53,0l20.87,12a5.42,5.42,0,0,0,7.41-2h0a5.42,5.42,0,0,0-2-7.41l-20.88-12a16.39,16.39,0,0,0-16.37,0L11.77,22A16.43,16.43,0,0,0,3.58,36.19V69.81A16.43,16.43,0,0,0,11.77,84L40.9,100.81a16.39,16.39,0,0,0,16.37,0l20.88-12a5.42,5.42,0,0,0,2-7.41Z"></path>
+            </g>
+        </svg>
+    </a>
+
     <div>
         <label class="switch">
             <input type="checkbox" id="night-day-checkbox">
@@ -17,6 +27,8 @@
             <h3 class="intro intro__intro">My name is <strong>{{ .Site.Params.MyName }}</strong>, I am a
                 <strong>{{ .Site.Params.MyTitle }}</strong>
                 who specializes in designing clean and efficient solutions to modern software problems.
+                I am interested in the architecture of large systems and how to implement them efficiently
+                while keeping a focus on future maintainability.
                 I recently graduated from the <strong>University of New Mexico</strong>
                 with a degree in <strong>Computer Science</strong>.
                 When I'm not coding, you can find me working on cars, reading a book,
